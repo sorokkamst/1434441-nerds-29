@@ -1,0 +1,335 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-darker: #444444;
+  --basic-dark: #666666;
+
+  --basic-grey: #EEEEEE;
+  --basic-grey-hover: #DFDFDF;
+  --basic-grey-active: #D5D5D5;
+
+  --basic-red: #FB565A;
+  --basic-red-hover: #E74246;
+  --basic-red-active: #D7373B;
+
+  --basic-green: #00CA74;
+  --basic-green-hover: #00BC6C;
+  --basic-green-active: #00AA62;
+
+  --basic-orange: #EFC849;
+  --basic-orange-hover: #EAB534;
+  --basic-orange-active: #E5A722;
+
+  --basic-white: #FFFFFF;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
+
+  --social-media-color:linear-gradient(0deg, #E1E1E1, #E1E1E1);
+}
+
+/* All document settings */
+
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation {
+  background-color: var(--basic-grey);
+}
+
+.site-navigation,
+.basket-list {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a,
+.basket-list a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.basket-list a:hover {
+  color: var(--basic-red);
+}
+
+.site-navigation a:active,
+.basket-list a:active {
+  color: var(--basic-dark);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/* Slider */
+
+.slider-item-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.slider-item-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-extra-dark);
+}
+
+.slider-button {
+  background-color: var(--basic-red);
+}
+
+.slider-button:hover {
+  background-color: var(--basic-red-hover);
+}
+
+.slider-button:active {
+  background-color: var(--basic-red-active);
+  color: var(--basic-white-opacity);
+}
+
+
+/* Section "Services" */
+
+.services-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.services-item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Services buttons */
+/* Red */
+.services-item-button-red {
+  background-color: var(--basic-red);
+}
+
+.services-item-button-red:hover {
+  background-color: var(--basic-red-hover);
+}
+
+.services-item-button-red:active {
+  background-color: var(--basic-red-active);
+  color: var(--basic-white-opacity);
+}
+
+/* Green */
+
+.services-item-button-green {
+  background-color: var(--basic-green);
+}
+
+.services-item-button-green:hover {
+  background-color: var(--basic-green-hover);
+}
+
+.services-item-button-green:active {
+  background-color: var(--basic-green-active);
+  color: var(--basic-white-opacity);
+}
+
+/* Orange */
+
+.services-item-button-orange {
+  background-color: var(--basic-orange);
+}
+
+.services-item-button-orange:hover {
+  background-color: var(--basic-orange-hover);
+}
+
+.services-item-button-orange:active {
+  background-color: var(--basic-orange-active);
+  color: var(--basic-white-opacity);
+}
+
+/*Section "About company" left*/
+
+.about-company-left-section-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.about-company-left-section-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-extra-dark);
+}
+
+.about-company-left-section-list-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about-company-left-section-list-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--basic-extra-dark);
+}
+
+/*Section "About company" Right*/
+
+.about-company-right-section-definitions-description {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.definition-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--basic-extra-dark);
+}
+
+.definition-title-value {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.sup {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--basic-black);
+}
+
+/* Section "Partners" */
+/* Тут будут стили для логотипов партнеров */
+
+
+/* Section "Location Information" */
+.location-information-company-name {
+    font-size:18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.location-information-adress,
+.location-information-phone-number,
+.location-information-phone-number a {
+    font-size:16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--basic-dark);
+}
+
+.location-information-button .button {
+    background-color: var(--basic-red);
+}
+
+/* Не нашел в стайлгайде, не нужно оформлять? */
+/* .location-information-button .button:hover {
+    background-color: var(--basic-red-hover);
+}
+
+.location-information-button .button:active {
+    background-color: var(--basic-red-active);
+    color: var(--basic-white-opacity);
+} */
+
+/* Section "Social Media" */
+
+/* Section "Benefit" */
+
+.benefit-title {
+    font-size:36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.benefit-text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--basic-darker);
+}
