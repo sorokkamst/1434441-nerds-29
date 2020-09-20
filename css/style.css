@@ -132,6 +132,11 @@ a {
 
 /* Slider */
 
+.slider-list {
+
+background-color: var(--basic-grey);
+}
+
 .slider-item-title {
   font-size: 55px;
   line-height: 55px;
@@ -333,3 +338,4 @@ a {
     font-weight: 400;
     color: var(--basic-darker);
 }
+
