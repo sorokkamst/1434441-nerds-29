@@ -37,6 +37,7 @@
   --basic-black: #000000;
   --basic-extra-dark: #283136;
   --basic-darker: #444444;
+  --basic-darker-light: #4D4D4D;
   --basic-dark: #666666;
 
   --basic-grey: #EEEEEE;
@@ -130,7 +131,7 @@ a {
 
 .slider-list {
 
-background-color: var(--basic-grey);
+  background-color: var(--basic-grey);
 }
 
 .slider-item-title {
@@ -287,24 +288,24 @@ background-color: var(--basic-grey);
 
 /* Section "Location Information" */
 .location-information-company-name {
-    font-size:18px;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: var(--basic-black);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 .location-information-adress,
 .location-information-phone-number,
 .location-information-phone-number a {
-    font-size:16px;
-    font-weight: 400;
-    line-height: 18px;
-    color: var(--basic-dark);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--basic-dark);
 }
 
 .location-information-button .button {
-    background-color: var(--basic-red);
+  background-color: var(--basic-red);
 }
 
 /* Не нашел в стайлгайде, не нужно оформлять? */
@@ -322,16 +323,147 @@ background-color: var(--basic-grey);
 /* Section "Benefit" */
 
 .benefit-title {
-    font-size:36px;
-    line-height: 36px;
-    font-weight: 700;
-    color: var(--basic-black);
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--basic-black);
 }
 
 .benefit-text {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    color: var(--basic-darker);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--basic-darker);
 }
 
+/* Catalog.html Catalog.html Catalog.html*/
+
+.catalog-heading {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: var(--basic-black);
+  background-color: var(--basic-grey);
+}
+
+.free-content {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.sort-list {
+  list-style: none;
+}
+
+/* Почему-то все ссылки на странице каталога при нажатии становились красными, я не понимаю из-за чего. Только после того, как я их переопределил, они стало работать так, как надо. */
+
+.sort-list a {
+  font-style: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sort-list a:hover {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.sort-list a:active {
+  color: var(--basic-black);
+  /* Почему без указания opacity псевдокласс не работает? */
+  opacity: 1;
+}
+
+/* Section "Demos" */
+
+.demos-list {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+.demos-list .demo-img {
+  background-color: var(--basic-darker-light);
+  list-style: none;
+}
+
+.demos-list .demo-img:hover {
+  opacity: 0.12;
+}
+
+.demos-item-popup {
+  background-color: var(--basic-grey);
+}
+
+.demos-item-popup h3 {
+  font-style: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.demos-item-popup h3:hover {
+  color: var(--basic-red);
+}
+
+.demos-item-popup h3:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.demos-item-popup p {
+  font-style: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-dark);
+}
+
+.demos-item-popup a {
+  background-color: var(--basic-red);
+  border-radius: 3px;
+}
+
+.demos-item-popup a:hover {
+  background-color: var(--basic-red-hover);
+  border-radius: 3px;
+}
+
+.demos-item-popup a:active {
+  background-color: var(--basic-red-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+}
+
+.demos-search li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.demos-search a {
+  background-color: var(--basic-grey);
+  border-radius: 3px;
+}
+
+.demos-search a:hover {
+  background-color: var(--basic-grey-hover);
+  border-radius: 3px;
+}
+
+.demos-search a:active {
+  background-color: var(--basic-grey-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
