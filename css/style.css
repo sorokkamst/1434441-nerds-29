@@ -34,6 +34,8 @@
 /* Variables */
 
 :root {
+  --black-opacity: rgba(0, 0, 0, 0.3);
+
   --basic-black: #000000;
   --basic-extra-dark: #283136;
   --basic-darker: #444444;
@@ -130,8 +132,10 @@ a {
 /* Slider */
 
 .slider-list {
-
   background-color: var(--basic-grey);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-item-title {
@@ -163,6 +167,13 @@ a {
 
 
 /* Section "Services" */
+
+.services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 .services-item h3 {
   font-size: 24px;
@@ -283,8 +294,11 @@ a {
 }
 
 /* Section "Partners" */
-/* Тут будут стили для логотипов партнеров */
-
+.partners-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* Section "Location Information" */
 .location-information-company-name {
@@ -319,6 +333,12 @@ a {
 } */
 
 /* Section "Social Media" */
+
+.social-media-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* Section "Benefit" */
 
@@ -384,7 +404,7 @@ a {
 /* Section "Demos" */
 
 .demos-list {
-  list-style:none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -443,28 +463,37 @@ a {
   border-radius: 3px;
 }
 
-.demos-search li {
+.demos-search {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.demos-search .page-link {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   color: var(--basic-black);
 }
 
-.demos-search a {
+.demos-search .page-link {
   background-color: var(--basic-grey);
   border-radius: 3px;
 }
 
-.demos-search a:hover {
+.demos-search .page-link:hover {
   background-color: var(--basic-grey-hover);
-  border-radius: 3px;
 }
 
-.demos-search a:active {
+.demos-search .page-link:active {
   background-color: var(--basic-grey-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--black-opacity);
+}
+
+.demos-search .page-link-current {
+  background: rgba(0, 0, 0, 0.0001);
+  border: 3px solid #DBDBDB;
+  box-sizing: border-box;
   border-radius: 3px;
-  mix-blend-mode: normal;
-  opacity: 0.3;
 }
 
