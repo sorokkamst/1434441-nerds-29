@@ -42,6 +42,8 @@
   --basic-darker-light: #4D4D4D;
   --basic-dark: #666666;
 
+  --basic-rgba-dark:rgba(0, 1, 1, 0.1);
+
   --basic-grey: #EEEEEE;
   --basic-grey-hover: #DFDFDF;
   --basic-grey-active: #D5D5D5;
@@ -60,6 +62,8 @@
 
   --basic-white: #FFFFFF;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
+
+  --basic-rgba-white:rgba(0, 0, 0, 0.0001)
 
   --social-media-color: linear-gradient(0deg, #E1E1E1, #E1E1E1);
 }
@@ -380,7 +384,7 @@ a {
 /* Почему-то все ссылки на странице каталога при нажатии становились красными, я не понимаю из-за чего. Только после того, как я их переопределил, они стало работать так, как надо. */
 
 .sort-list a {
-  font-style: 14px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -459,7 +463,7 @@ a {
 
 .demos-item-popup a:active {
   background-color: var(--basic-red-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--custome-dark);
   border-radius: 3px;
 }
 
@@ -491,7 +495,7 @@ a {
 }
 
 .demos-search .page-link-current {
-  background: rgba(0, 0, 0, 0.0001);
+  background: var(--basic-rgba-white);
   border: 3px solid #DBDBDB;
   box-sizing: border-box;
   border-radius: 3px;
