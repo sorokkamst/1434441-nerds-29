@@ -426,7 +426,7 @@ a {
   background-color: var(--basic-grey);
 }
 
-.demos-item-popup h3 {
+.demos-item-popup a {
   font-style: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -434,11 +434,11 @@ a {
   color: var(--basic-black);
 }
 
-.demos-item-popup h3:hover {
+.demos-item-popup a:hover {
   color: var(--basic-red);
 }
 
-.demos-item-popup h3:active {
+.demos-item-popup a:active {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
@@ -449,22 +449,6 @@ a {
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-dark);
-}
-
-.demos-item-popup a {
-  background-color: var(--basic-red);
-  border-radius: 3px;
-}
-
-.demos-item-popup a:hover {
-  background-color: var(--basic-red-hover);
-  border-radius: 3px;
-}
-
-.demos-item-popup a:active {
-  background-color: var(--basic-red-active);
-  box-shadow: inset 0px 3px 0px var(--custome-dark);
-  border-radius: 3px;
 }
 
 .demos-search {
