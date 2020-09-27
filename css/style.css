@@ -413,14 +413,14 @@ a {
   padding: 0;
 }
 
-.demos-list .demo-img {
+/* .demos-list .demo-img {
   background-color: var(--basic-darker-light);
   list-style: none;
 }
 
 .demos-list .demo-img:hover {
   opacity: 0.12;
-}
+} */
 
 .demos-item-popup {
   background-color: var(--basic-grey);
