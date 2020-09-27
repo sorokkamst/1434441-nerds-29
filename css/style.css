@@ -422,6 +422,10 @@ a {
   opacity: 0.12;
 } */
 
+.demos-item {
+  background-color: var(--basic-grey);
+}
+
 .demos-item-popup {
   background-color: var(--basic-grey);
 }
