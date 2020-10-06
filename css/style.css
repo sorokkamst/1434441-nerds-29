@@ -93,8 +93,6 @@ a {
   text-transform: uppercase;
 }
 
-
-
 /* Grid */
 
 .page {
@@ -120,7 +118,6 @@ a {
   background-color: var(--basic-grey);
 }
 
-
 .site-navigation {
   list-style: none;
   margin: 0;
@@ -130,6 +127,13 @@ a {
 .basket-item {
   margin: 0;
   padding: 0;
+}
+
+/* Main slider grid */
+
+.slider-item {
+  display: grid;
+  grid-template-columns: 400px 760px;
 }
 
 /* Services grid */
