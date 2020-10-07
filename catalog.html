@@ -10,50 +10,50 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo-header.svg" width="160" height="65" alt="Логотип компании Nerds">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="basket-list">
-        <li class="basket-item">
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="page-catalog wrapper">
-    <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
-    <!-- Необходимо ли тут использовать обертку div? Смоневаюсь, могу ли я просто оставить p? -->
-    <div class="images-title free-content">
-      <p>Сортировать:</p>
+    <div class="wrapper">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/nerds-logo-header.svg" width="160" height="65" alt="Логотип компании Nerds">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a>Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="basket-list">
+          <li class="basket-item">
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!-- Список сортировки макетов -->
-    <ul class="sort-list sort-types">
-      <li><a href="#">По цене</a></li>
-      <li><a href="#">По типу</a></li>
-      <li><a href="#">По названию</a></li>
-    </ul>
-    <ul class="sort-list sort-updown">
-      <li><a href="#">Сортировка по убыванию</a></li>
-      <li><a href="#">Сортировка по возрастанию</a></li>
-    </ul>
-
-    <!-- Тут будет фильтр стоимость/сетка/особенности -->
-    <section class="filter">
-      <h2 class="visually-hidden">Фильтр шаблонов</h2>
-      <div class="filter-title free-content">
-        <p>Стоимость:</p>
+  </header>
+  <main class="wrapper">
+    <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
+    <div class="page-catalog ">
+    <div class="filter-title free-content">
+      <p>Стоимость:</p>
+    </div>
+    <!-- Необходимо ли тут использовать обертку div? Смоневаюсь, могу ли я просто оставить p? -->
+    <div class="crumbs">
+      <div class="images-title free-content">
+        <p>Сортировать:</p>
       </div>
-
-    </section>
+      <ul class="sort-list sort-types">
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По названию</a></li>
+      </ul>
+      <ul class="sort-list sort-updown">
+        <li><a href="#">Сортировка по убыванию</a></li>
+        <li><a href="#">Сортировка по возрастанию</a></li>
+      </ul>
+    </div>
     <!-- Тут будет фильтр стоимость/сетка/особенности -->
-
+    <section>
+      <p>Фильтр</p>
+    </section>
     <section class="demos">
       <h2 class="visually-hidden">Визуальный набор шаблонов</h2>
       <ul class="demos-list">
@@ -83,7 +83,7 @@
         <li class="demos-item">
           <img src="img/borodinski-catalog-project.jpg" width="358" height="578" alt="Демо-макет Barbershop">
           <!-- <div class="demo-img"> -->
-        <!-- </div> -->
+          <!-- </div> -->
           <div class="demos-item-popup">
             <h3><a href="#">Barbershop</a></h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -93,7 +93,7 @@
         <li class="demos-item">
           <img src="img/mishki-catalog-project.jpg" width="358" height="578" alt="Демо-макет Mishka">
           <!-- <div class="demo-img"> -->
-        <!-- </div> -->
+          <!-- </div> -->
           <div class="demos-item-popup">
             <h3><a href="#">Mishka</a></h3>
             <p>Интернет-магазин вязаных игрушек</p>
@@ -103,7 +103,7 @@
         <li class="demos-item">
           <img src="img/catalog-project.jpg" width="358" height="578" alt="Демо-макет A plus">
           <!-- <div class="demo-img"> -->
-        <!-- </div> -->
+          <!-- </div> -->
           <div class="demos-item-popup">
             <h3><a href="#">A plus</a></h3>
             <p>Лендинг курсов повышения квалификации</p>
@@ -113,7 +113,7 @@
         <li class="demos-item">
           <img src="img/kvast-catalog-project.jpg" width="358" height="578" alt="Демо-макет Kvas">
           <!-- <div class="demo-img"> -->
-        <!-- </div> -->
+          <!-- </div> -->
           <div class="demos-item-popup">
             <h3><a href="#">Кваст</a></h3>
             <p>Промо-сайт производителякрафтового кваса</p>
@@ -122,6 +122,7 @@
         </li>
       </ul>
     </section>
+  </div>
     <ul class="demos-search">
       <li><a class="page-link page-link-current">1</a></li>
       <li><a class="page-link" href=#>2</a></li>
@@ -130,33 +131,39 @@
     </ul>
   </main>
   <footer class="page-footer catalog-footer">
-    <section class="location-information">
-      <h2 class="visually-hidden">Схема проезда</h2>
-      <p class="location-information-company-name">
-        NЁRDS DESIGN STUDIO
-      </p>
-      <p class="location-information-adress">
-        191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8<br>
-      </p>
-      <p class="location-information-phone-number">
-        тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-      </p>
-      <p class="location-information-button">
-        <a class="button" href=#>Напишите нам</a>
-      </p>
-    </section>
-    <section class="social-media-buttons">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social-media-list">
-        <li class="social-media-item social-media-item-vk"><a href="">VK</a></li>
-        <li class="social-media-item social-media-item-facebook"><a href="">Facebook</a></li>
-        <li class="social-media-item social-media-item-instagram"><a href="">Instagram</a></li>
-      </ul>
-    </section>
-    <div class="benefit">
-      <p class="benefit-title">Давайте дружить, это выгодно!</p>
-      <p class="benefit-text">Скидка 10% для друзей из социальных сетей.</p>
+    <div class="wrapper">
+      <section class="location-information">
+        <h2 class="visually-hidden">Схема проезда</h2>
+        <p class="location-information-company-name">
+          NЁRDS DESIGN STUDIO
+        </p>
+        <p class="location-information-adress">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+        </p>
+        <p class="location-information-phone-number">
+          тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <p class="location-information-button">
+          <a class="button" href=#>Напишите нам</a>
+        </p>
+      </section>
+
+      <section class="social-media-buttons">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <div class="footer-grid">
+          <ul class="social-media-list">
+            <li class="social-media-item social-media-item-vk"><a href="">VK</a></li>
+            <li class="social-media-item social-media-item-facebook"><a href="">Facebook</a></li>
+            <li class="social-media-item social-media-item-instagram"><a href="">Instagram</a></li>
+          </ul>
+
+          <div class="benefit">
+            <p class="benefit-title">Давайте дружить, это выгодно!</p>
+            <p class="benefit-text">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </section>
     </div>
   </footer>
 </body>
