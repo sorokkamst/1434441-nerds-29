@@ -95,6 +95,72 @@ a {
   font-weight: 500;
   text-transform: uppercase;
 }
+/* Flex */
+.site-navigation,
+.basket-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site-navigation a {
+  margin-right: 45px;
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  }
+
+.basket-list {
+  margin: 0;
+  padding:0;
+  justify-content: flex-end;
+}
+
+.slider-switcher-list {
+display: flex;
+justify-content: center;
+list-style: none;
+}
+.slider-switcher-list button {
+  margin-right: 17px;
+}
+
+.social-media-list {
+  display: flex;
+}
+
+.social-media-list a {
+  margin-right: 9px;
+}
+
+.about-company-right-section-definitions {
+  display: flex;
+  flex-direction: row;
+}
+
+.def-wrapper-1 {
+  width: 119px;
+}
+
+.def-wrapper-2 {
+  width: 125px;
+}
+
+.def-wrapper-3 {
+  width: 136px;
+}
+
+.def-wrapper {
+display: flex;
+align-items: center;
+flex-wrap: wrap-reverse;
+}
+
+.def-wrapper dd {
+  padding: 0;
+  margin:0;
+}
 
 /* Grid */
 
