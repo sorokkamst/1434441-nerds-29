@@ -117,6 +117,11 @@ a {
   justify-content: flex-end;
 }
 
+.site-navigation {
+  padding-left: 25px;
+}
+
+
 .slider-switcher-list {
 display: flex;
 justify-content: center;
@@ -141,14 +146,17 @@ list-style: none;
 
 .def-wrapper-1 {
   width: 119px;
+  height: 111px;
 }
 
 .def-wrapper-2 {
   width: 125px;
+  height: 111px;
 }
 
 .def-wrapper-3 {
   width: 136px;
+  height: 112px;
 }
 
 .def-wrapper {
@@ -160,6 +168,42 @@ flex-wrap: wrap-reverse;
 .def-wrapper dd {
   padding: 0;
   margin:0;
+}
+
+/* Flex catalog */
+.crumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  outline: 5px solid red;
+}
+
+.sort-types,
+.sort-updown {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-types {
+  justify-content: space-between;
+  margin-left: 267px;
+  width: 271px;
+}
+
+.sort-updown {
+  justify-content: space-between;
+  margin-left: 47px;
+  width: 41px;
+}
+
+.images-title p {
+  text-transform: uppercase;
+  width: 134px;
+}
+
+.filter-title {
+  text-transform: uppercase;
 }
 
 /* Grid */
@@ -468,16 +512,6 @@ flex-wrap: wrap-reverse;
   background-color: var(--basic-red);
 }
 
-/* Не нашел в стайлгайде, не нужно оформлять? */
-/* .location-information-button .button:hover {
-    background-color: var(--basic-red-hover);
-}
-
-.location-information-button .button:active {
-    background-color: var(--basic-red-active);
-    color: var(--basic-white-opacity);
-} */
-
 /* Section "Social Media" */
 
 .social-media-list {
@@ -520,6 +554,11 @@ flex-wrap: wrap-reverse;
   color: var(--basic-black);
 }
 
+.free-content p {
+  margin: 0;
+  padding: 0;
+}
+
 .sort-list {
   list-style: none;
 }
@@ -544,7 +583,6 @@ flex-wrap: wrap-reverse;
 
 .sort-list a:active {
   color: var(--basic-black);
-  /* Почему без указания opacity псевдокласс не работает? */
   opacity: 1;
 }
 
@@ -555,15 +593,6 @@ flex-wrap: wrap-reverse;
   margin: 0;
   padding: 0;
 }
-
-/* .demos-list .demo-img {
-  background-color: var(--basic-darker-light);
-  list-style: none;
-}
-
-.demos-list .demo-img:hover {
-  opacity: 0.12;
-} */
 
 .demos-item {
   background-color: var(--basic-grey);
@@ -602,6 +631,14 @@ flex-wrap: wrap-reverse;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.demos-search {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-between;
+  width: 443px;
 }
 
 .demos-search .page-link {
