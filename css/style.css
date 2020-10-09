@@ -100,7 +100,6 @@ a {
 .basket-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
 }
 
