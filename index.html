@@ -23,75 +23,63 @@
         </ul>
         <ul class="basket-list">
           <li class="basket-item">
-            <a href="#">Корзина</a>
+            <a class="basket-link" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <main class="wrapper">
-
+  <main>
     <h1 class="visually-hidden">Интернет магазин Nerds</h1>
-
+    
     <!-- Обернул слайды в список, показалось, что так будет более корректно расставлять классы -->
+    <div class="background-color">
+    <div class=" wrapper">
+    <section class="slider">
     <ul class="slider-list">
-      <li class="slider-item">
+      <li class="slider-item slider-item-1">
         <div class="item_desc">
           <p class="slider-item-title">Долго, дорого, скрупулезно.</p>
-          <p class="slider-item-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <p class="slider-item-text slider-item-text-1">Математически выверенный дизайн<br>для вашего сайта или
+            мобильного приложения.</p>
           <!-- Пишу button из-за логики восприятия макета, помню, что это ссылка в html -->
-          <a class="button slider-button" href="#">Узнать больше</a>
+          <a class="button slider-button slider-button-1" href="#">Узнать больше</a>
         </div>
-        <div>
-          <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="Слайд 1 / 3 телефона">
-        </div>
-
       </li>
-      <li class="slider-item">
+      <li class="slider-item slider-item-2 slider-current">
         <div class="item_desc">
           <p class="slider-item-title">Любим математику как никто другой</p>
-          <p class="slider-item-text">Никакого креатива, только математические формулы для расчета идеальных пропорций
+          <p class="slider-item-text slider-item-text-2">Никакого креатива, только математические формулы для расчета
+            идеальных пропорций
           </p>
-          <!-- Пишу button из-за логики восприятия макета, помню, что это ссылка в html -->
-          <a class="button slider-button" href="#">Узнать больше</a>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="Слайд 2 / 2 компьютерных экрана">
+          <a class="button slider-button slider-button-2" href="#">Узнать больше</a>
         </div>
       </li>
-      <li class="slider-item">
+      <li class="slider-item slider-item-3">
         <div class="item_desc">
           <p class="slider-item-title">Только ночь, только хардкор</p>
-          <p class="slider-item-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+          <p class="slider-item-text slider-item-text-3">Работать днем, как все? Мы против этого.<br>Ближе к полуночи
+            работа только
             начинается.
           </p>
-          <!-- Пишу button из-за логики восприятия макета, помню, что это ссылка в html -->
-          <a class="button slider-button" href="#">Узнать больше</a>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/760x431" width="760" height="431" alt="Слайд 3 / Планшет и мобильный">
+          <a class="button slider-button slider-button-3" href="#">Узнать больше</a>
         </div>
       </li>
     </ul>
-
+    <div class="slider-controls">
+      <button class="current" type="button" aria-label="Первый слайд"></button>
+      <button  type="button" aria-label="Второй слайд"></button>
+      <button type="button" aria-label="Третий слайд"></button>
+    </div>
+  </section>
+  </div>
+</div>
     <!-- Разметка переключателя между слайдами -->
-    <ul class="slider-switcher-list">
-      <li class="slider-switcher-item">
-        <button type="button">Слайд 1</button>
-      </li>
-      <li class="slider-switcher-item">
-        <button type="button">Слайд 2</button>
-      </li>
-      <li class="slider-switcher-item">
-        <button type="button">Слайд 3</button>
-      </li>
-    </ul>
 
     <!-- Конец разметки слайдера -->
     <!-- Не добавлял классы h3 и p из-за того, что они одиночные, можно будет обратиться вот так .services-item h3/ .services-item p -->
     <!-- Первый класс у кнопок отвечает за оформление, а второй за цвет -->
-    <section class="services">
+    <section class="services wrapper">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item">
@@ -100,15 +88,15 @@
           </div>
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button services-item-button-red" href="#">Заказать</a>
+          <a class="button services-button services-item-button-red" href="#">Заказать</a>
         </li>
         <li class="services-item">
           <div>
             <img src="img/illustration-application.png" width="300" height="146" alt="Два мобильных телефона">
           </div>
           <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button services-item-button-green" href="#">Заказать</a>
+          <p>Покорите топ-10 приложений<br>в AppStore и Google Play</p>
+          <a class="button services-button services-item-button-green" href="#">Заказать</a>
         </li>
         <li class="services-item">
           <div>
@@ -116,13 +104,13 @@
           </div>
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button services-item-button-orange" href="#">Заказать</a>
+          <a class="button services-button services-item-button-orange" href="#">Заказать</a>
         </li>
       </ul>
     </section>
 
     <!-- Секция "О компании" -->
-    <section class="about-company">
+    <section class="about-company wrapper">
       <h2 class="visually-hidden">О компании</h2>
       <div class="about-company-container">
         <div class="about-company-left-section">
@@ -151,32 +139,30 @@
         </div>
         <!-- Правая часть секции -->
         <div class="about-company-right-section">
-          <p class="about-company-right-section-logo">
-            <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип с фоном">
-          </p>
+          <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип с фоном">
           <p class="about-company-right-section-definitions-description">
             с 2004 года Любим точность во всем:
           </p>
           <dl class="about-company-right-section-definitions">
             <div class="def-wrapper def-wrapper-1">
-            <dt class="definition-title">Уровень самоотдачи</dt>
-            <dd class="definition-title-value">146<sup class="sup">%</sup></dd>
-          </div>
-          <div class="def-wrapper def-wrapper-2">
-            <dt class="definition-title">Соблюдение сроков</dt>
-            <dd class="definition-title-value">100<sup class="sup">%</sup></dd>
-          </div>
-          <div class="def-wrapper def-wrapper-3">
-            <dt class="definition-title">Минимальная предоплата</dt>
-            <dd class="definition-title-value">50<sup class="sup">%</sup></dd>
-          </div>
+              <dt class="definition-title">Уровень самоотдачи</dt>
+              <dd class="definition-title-value">146<sup class="sup">%</sup></dd>
+            </div>
+            <div class="def-wrapper def-wrapper-2">
+              <dt class="definition-title">Соблюдение сроков</dt>
+              <dd class="definition-title-value">100<sup class="sup">%</sup></dd>
+            </div>
+            <div class="def-wrapper def-wrapper-3">
+              <dt class="definition-title">Минимальная предоплата</dt>
+              <dd class="definition-title-value">50<sup class="sup">%</sup></dd>
+            </div>
           </dl>
         </div>
       </div>
     </section>
     <!-- Конец секции "О компании" -->
     <!-- Начало секции с партнерами -->
-    <section class="partners">
+    <section class="partners wrapper">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="partners-list">
         <li class="partners-item">
@@ -197,43 +183,60 @@
         </li>
       </ul>
     </section>
+    <div>
     <!-- Конец секции с партнерами -->
   </main>
-  <footer class="page-footer main-footer">
-    <div class="wrapper">
-      <section class="location-information">
-        <h2 class="visually-hidden">Схема проезда</h2>
-        <p class="location-information-company-name">
-          NЁRDS DESIGN STUDIO
-        </p>
-        <p class="location-information-adress">
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-        </p>
-        <p class="location-information-phone-number">
-          тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-        </p>
-        <p class="location-information-button">
-          <a class="button" href=#>Напишите нам</a>
-        </p>
-      </section>
+  <footer class="page-footer main-footer ">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603127366778!5m2!1sru!2sru" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-      <section class="social-media-buttons">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <div class="footer-grid">
-          <ul class="social-media-list">
-            <li class="social-media-item social-media-item-vk"><a href="">VK</a></li>
-            <li class="social-media-item social-media-item-facebook"><a href="">Facebook</a></li>
-            <li class="social-media-item social-media-item-instagram"><a href="">Instagram</a></li>
-          </ul>
-
-          <div class="benefit">
-            <p class="benefit-title">Давайте дружить, это выгодно!</p>
-            <p class="benefit-text">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
-        </div>
-      </section>
+      <div class="location-information wrapper">
+      <h2 class="visually-hidden">Схема проезда</h2>
+      <p class="location-information-company-name">
+        NЁRDS DESIGN STUDIO
+      </p>
+      <p class="location-information-adress">
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8<br>
+      </p>
+      <p class="location-information-phone-number">
+        тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+      </p>
+      <div class="location-information-button">
+        <a class="button" href=#>Напишите нам</a>
+      </div>
     </div>
+  </div>
+
+  <section class="social-media-buttons wrapper">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <div class="footer-grid">
+        <ul class="social-media-list">
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="27" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.14 11.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.71.74-5.25 1.6-2.15 2.24-3.46 2.04-4.02-.2-.54-1.37-.4-1.37-.4L20.7.7c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.15-2.72 2.96-.66-.43-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 0c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.53.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.92-1.4-2.92s-.1-.29-.32-.45c-.25-.18-.6-.24-.6-.24L.85.68S.29.7.08.95c-.18.21-.01.66-.01.66s2.9 6.89 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z" fill="#fff"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z" fill="#fff"/></svg>
+            </a>
+          </li>
+        </ul>
+        <div class="benefit">
+          <p class="benefit-title">Давайте дружить, это выгодно!</p>
+          <p class="benefit-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </section>
   </footer>
 </body>
 
