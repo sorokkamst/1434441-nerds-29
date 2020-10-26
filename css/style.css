@@ -53,6 +53,7 @@
   --basic-grey-active: #D5D5D5;
   --basic-grey-social: #E1E1E1;
   --basic-grey-pagination: #DBDBDB;
+  --basic-grey-modal:#D7DCDE;
 
 
   --basic-red: #FB565A;
@@ -1467,6 +1468,7 @@ li:last-child .page-link {
   opacity: 0.3;
 }
 
+
 .filter-button {
   display: block;
   color: var(--basic-black);
@@ -1486,4 +1488,115 @@ li:last-child .page-link {
 .filter-button:active {
   background-color:var(--basic-grey-active);
   color:var(--black-opacity);
+}
+
+.modal {
+  position: fixed;
+  width: 960px;
+  min-height: 590px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  right: 0;
+  left: 0;
+  bottom:180px;
+  margin: auto;
+}
+
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -2px;
+}
+
+
+.modal-description {
+  color: var(--basic-black);
+  margin: 0;
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+  font-style: normal;
+  padding-left: 100px;
+  padding-top: 63px;
+  padding-bottom: 37px;
+}
+
+.feedback-form label {
+color: var(--basic-black);
+font-size: 16px;
+line-height: 18px;
+font-weight: 700;
+}
+
+.modal-name-input,
+.modal-email-input,
+.modal-text-input {
+  width: 340px;
+  height: 46px;
+  border: 2px solid var(--basic-grey-modal);
+  padding-left: 16px;
+  margin-top: 5px;
+}
+
+.modal-text-input {
+  width: 756px;
+  padding-left: 16px;
+  padding-bottom: 71px;
+}
+
+.name,
+.email {
+  width: 360px;
+  height: 77px;
+  margin: 0;
+}
+
+.name {
+  margin-left:100px;
+}
+
+.email {
+  margin-left:40px;
+}
+
+.message {
+  width: 760px;
+  height: 145px;
+  margin: 0;
+  margin-left: 101px;
+  margin-top: 35px;
+}
+
+.feedback-form button {
+  height: 50px;
+  width: 259px;
+  border: 0;
+  padding:0;
+  margin: 0;
+  margin-left: 101px;
+  margin-bottom: 84px;
+  background-color: var(--basic-red);
+  margin-top:47px;
+}
+
+.modal-close {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  /* cursor: pointer; */
+  right: 90px;
+  top:78px;
+  opacity: 0.3;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
+.modal {
+  display: none;
 }
