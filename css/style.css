@@ -54,6 +54,8 @@
   --basic-grey-social: #E1E1E1;
   --basic-grey-pagination: #DBDBDB;
   --basic-grey-modal:#D7DCDE;
+  --basic-grey-light:#ABABAB;
+  --basic-grey-control: #CFCFCF;
 
 
   --basic-red: #FB565A;
@@ -70,6 +72,7 @@
 
   --basic-white: #FFFFFF;
   --basic-white-demo: #F2F2F2;
+  --basic-white-modal: #F1F1F1;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
 
   --basic-rgba-white: rgba(0, 0, 0, 0.0001);
@@ -1147,7 +1150,7 @@ li:last-child .page-link {
   padding-right: 17px;
   padding-bottom: 13px;
   background: var(--basic-rgba-white);
-  border: 3px solid #DBDBDB;
+  border: 3px solid var(--basic-grey-pagination);
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -1287,19 +1290,19 @@ li:last-child .page-link {
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f1f1f1;
+  background-color: var(--basic-white-modal);
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background:var(--basic-grey-modal);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  background: var(--basic-green);
 }
 
 .range-controls .toggle {
@@ -1309,10 +1312,10 @@ li:last-child .page-link {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-grey-light);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--basic-grey-control);
   cursor: pointer;
 }
 
@@ -1341,10 +1344,10 @@ li:last-child .page-link {
   padding-bottom: 10px;
   margin-left: 10px;
   text-align: center;
-  color: #283136;
+  color: var(--basic-extra-dark);
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: var(--basic-white-modal);
   font-family: inherit;
   font-size: inherit;
   text-align: center;
