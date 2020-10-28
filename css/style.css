@@ -981,37 +981,30 @@ a {
 .demos-item {
   height: 620px;
   width: 358px;
-  background-color: var(--basic-darker-light-rgba-opacity);
-  border-radius: 5px;
-  position: relative;
   border: 1px solid var(--basic-opacity-zero);
-}
-
-.demos-item:nth-child(5) img {
-  bottom: 0;
-}
-
-.dottes {
-  width: 60px;
-  height: 14px;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  top: 13px;
-  left: 16px;
-}
-
-.dottes div {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: var(--basic-white);
+  position: relative;
+  border-radius: 5px;
 }
 
 .demos-item:hover {
-  background-color: var(--basic-darker-light-rgba);
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
-  border: 0;
+  box-shadow: 0px 6px 15px var(--basic-black-shadow);
+}
+
+.demos-item::before {
+  content: "";
+  background-image: url(../img/shape-demo.svg);
+  width: 358px;
+  height: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  opacity: 0.12;
+  border-top-right-radius: 5px;
+}
+
+.demos-item:hover::before {
+  opacity: 1;
 }
 
 .demos-item-popup {
@@ -1023,7 +1016,6 @@ a {
   position: absolute;
   bottom: 0;
   background-color: var(--basic-grey);
-  border-radius: 5px;
 }
 
 .demos-item-popup:hover {
@@ -1042,8 +1034,9 @@ a {
   position: absolute;
   bottom: 0;
   width: 358px;
-  height: 578px;
-  border-radius: 5px;
+  height: 580px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 h3 a:hover {
@@ -1100,20 +1093,18 @@ h3 a:active {
 .demos-search {
   display: flex;
   text-transform: uppercase;
-  align-items: center;
-  justify-content: space-between;
   height: 50px;
-  width: 443px;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 55px;
+  margin-top: 62px;
+  margin-left: 2px;
 }
-
 .demos-search .page-link {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  margin-right: 11px;
   color: var(--basic-black);
 }
 
@@ -1202,6 +1193,7 @@ li:last-child .page-link {
 
 
 .location-information-button .button {
+  margin-top: 0px;
   background-color: var(--basic-red);
 }
 
@@ -1214,12 +1206,12 @@ li:last-child .page-link {
 .location-information-button {
   margin: 0;
   padding-left: 50px;
-  padding-top: 51px;
+  padding-top: 49px;
 }
 
 .location-information-button a {
-  padding-top: 16px;
-  padding-bottom: 14px;
+  padding-top: 18px;
+  padding-bottom: 12px;
   padding-left: 44px;
   padding-right: 44px;
 }
@@ -1536,19 +1528,27 @@ font-weight: 700;
 }
 
 .modal-name-input,
-.modal-email-input,
-.modal-text-input {
+.modal-email-input {
   width: 340px;
-  height: 46px;
-  border: 2px solid var(--basic-grey-modal);
+  height: 42px;
+  outline: 2px solid var(--basic-grey-modal);
+  outline-offset: -2px;
   padding-left: 16px;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .modal-text-input {
+  outline: 2px solid var(--basic-grey-modal);
+  outline-offset: -2px;
+  margin-top: 10px;
+  height: 110px;
   width: 756px;
-  padding-left: 16px;
-  padding-bottom: 71px;
+  resize: none;
+}
+
+.modal-text-input::placeholder {
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .name,
@@ -1571,7 +1571,7 @@ font-weight: 700;
   height: 145px;
   margin: 0;
   margin-left: 101px;
-  margin-top: 35px;
+  margin-top: 33px;
 }
 
 .feedback-form button {
@@ -1583,15 +1583,15 @@ font-weight: 700;
   margin-left: 101px;
   margin-bottom: 84px;
   background-color: var(--basic-red);
-  margin-top:47px;
+  margin-top:50px;
 }
 
 .modal-close {
   background-color: transparent;
   border: 0;
   position: absolute;
-  /* cursor: pointer; */
-  right: 90px;
+  cursor: pointer;
+  right: 85px;
   top:78px;
   opacity: 0.3;
 }

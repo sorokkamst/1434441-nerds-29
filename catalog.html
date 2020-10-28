@@ -140,11 +140,6 @@
             <!-- Хочу сделать li контейнером, менять сзади фон при наведении, не думаю, что надо еще раз оборачивать в div -->
             <!-- Обернул всплывающее окно в div, чтобы им легче было манипулировать (не до конца понимаю верно это или нет) -->
             <li class="demos-item">
-              <div class="dottes">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
               <img src="img/sedona-catalog-project.jpg" width="358" height="578" alt="Демо-макет Sedona">
               <!-- <div class="demo-img">
         </div> -->
@@ -156,11 +151,6 @@
               </div>
             </li>
             <li class="demos-item">
-              <div class="dottes">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
               <img src="img/pink-catalog-project.jpg" width="358" height="578" alt="Демо-макет Pink App">
               <!-- <div class="demo-img">
         </div> -->
@@ -171,11 +161,6 @@
               </div>
             </li>
             <li class="demos-item">
-              <div class="dottes">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
               <img src="img/borodinski-catalog-project.jpg" width="358" height="578" alt="Демо-макет Barbershop">
               <!-- <div class="demo-img"> -->
               <!-- </div> -->
@@ -186,11 +171,6 @@
               </div>
             </li>
             <li class="demos-item">
-              <div class="dottes">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
               <img src="img/mishki-catalog-project.jpg" width="358" height="578" alt="Демо-макет Mishka">
               <!-- <div class="demo-img"> -->
               <!-- </div> -->
@@ -201,11 +181,6 @@
               </div>
             </li>
             <li class="demos-item">
-              <div class="dottes">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
               <img src="img/catalog-project.jpg" width="358" height="578" alt="Демо-макет A plus">
               <!-- <div class="demo-img"> -->
               <!-- </div> -->
@@ -216,11 +191,6 @@
               </div>
             </li>
             <li class="demos-item">
-              <div class="dottes">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
               <img src="img/kvast-catalog-project.jpg" width="358" height="578" alt="Демо-макет Kvas">
               <!-- <div class="demo-img"> -->
               <!-- </div> -->
@@ -303,6 +273,28 @@
       </div>
     </section>
   </footer>
+  <section class="modal">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <p class="modal-description">Напишите нам</p>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="name">
+        <label for="modal-name">Ваше имя:</label>
+        <input class="modal-name-input" id="modal-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="email">
+        <label for="modal-email">Ваш email:</label>
+        <input class="modal-email-input" id="modal-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="message">
+        <label for="modal-text">Текст письма:</label>
+        <textarea class="modal-text-input" id="modal-text" name="text" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"><svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z" fill="#FB565A"/>
+      </svg></button>
+  </section>
 </body>
 
 </html>
