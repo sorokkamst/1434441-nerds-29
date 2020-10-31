@@ -51,6 +51,7 @@
 
   --basic-grey: #EEEEEE;
   --basic-grey-hover: #DFDFDF;
+  --basic-grey-modal-hover:#B4B9BB;
   --basic-grey-active: #D5D5D5;
   --basic-grey-social: #E1E1E1;
   --basic-grey-pagination: #DBDBDB;
@@ -1152,14 +1153,13 @@ li:last-child .page-link {
 
 .map {
   height: 416px;
-  width: 100%;
   margin-top: 35px;
 }
 
 .map iframe {
-
   position: absolute;
   display: block;
+  width: 100%;
 }
 
 /* Section "Location Information" */
@@ -1541,14 +1541,31 @@ font-weight: 700;
   outline: 2px solid var(--basic-grey-modal);
   outline-offset: -2px;
   margin-top: 10px;
-  height: 110px;
-  width: 756px;
+  height: 95px;
+  width: 741px;
   resize: none;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
-.modal-text-input::placeholder {
-  padding-left: 15px;
-  padding-top: 10px;
+.modal-text-input:hover,
+.modal-name-input:hover,
+.modal-email-input:hover {
+  outline: 2px solid var(--basic-grey-modal-hover);
+  outline-offset: -2px;
+}
+
+.modal-text-input:focus,
+.modal-name-input:focus,
+.modal-email-input:focus {
+  outline: 2px solid var(--basic-black);
+  outline-offset: -2px;
+}
+
+.modal-text-input:focus::placeholder,
+.modal-name-input:focus::placeholder,
+.modal-email-input:focus::placeholder {
+  color:var(--basic-black);
 }
 
 .name,
@@ -1606,4 +1623,17 @@ font-weight: 700;
 
 .modal {
   display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+.input-error {
+  outline: 2px solid var(--basic-red-hover);
+  outline-offset: -2px;
+}
+
+.input-error::placeholder {
+  color: var(--basic-red-hover);
 }
