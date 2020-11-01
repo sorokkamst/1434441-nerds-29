@@ -37,14 +37,20 @@ form.addEventListener("submit", function (evt) {
     if (!userName.value) {
     evt.preventDefault();
     userName.classList.add("input-error");
+    form.classList.remove("modal-error");
+    form.offsetWidth = form.offsetWidth;
     form.classList.add("modal-error");
 } if (!userEmail.value) {
     evt.preventDefault();
     userEmail.classList.add("input-error");
+    form.classList.remove("modal-error");
+    form.offsetWidth = form.offsetWidth;
     form.classList.add("modal-error");
 } if (!userText.value) {
     evt.preventDefault();
     userText.classList.add("input-error");
+    form.classList.remove("modal-error");
+    form.offsetWidth = form.offsetWidth;
     form.classList.add("modal-error");
 } else {
     localStorage.setItem("userNameValue", userName.value);
