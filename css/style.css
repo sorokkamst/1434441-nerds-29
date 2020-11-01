@@ -1157,11 +1157,11 @@ li:last-child .page-link {
   margin-top: 35px;
 }
 
-/* .map-error {
+.map-error {
   background-image: url(../img/map.png);
   background-position: center;
   background-repeat: no-repeat;
-} */
+}
 
 .map iframe {
   position: absolute;
