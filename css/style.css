@@ -1156,10 +1156,17 @@ li:last-child .page-link {
   margin-top: 35px;
 }
 
+/* .map-error {
+  background-image: url(../img/map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
 .map iframe {
   position: absolute;
   display: block;
   width: 100%;
+  border: 0;
 }
 
 /* Section "Location Information" */
@@ -1188,25 +1195,24 @@ li:last-child .page-link {
 .location-information-adress {
   margin: 0;
   padding-left: 50px;
-  padding-top: 25px;
+  padding-top: 22px;
 }
 
 
 .location-information-button .button {
-  margin-top: 0px;
   background-color: var(--basic-red);
 }
 
 .location-information-phone-number {
   margin: 0;
-  padding-top: 19px;
+  padding-top: 17px;
   padding-left: 50px;
 }
 
 .location-information-button {
   margin: 0;
   padding-left: 50px;
-  padding-top: 49px;
+  padding-top: 52px;
 }
 
 .location-information-button a {
@@ -1435,12 +1441,12 @@ li:last-child .page-link {
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  width: 25px;
+  width: 26px;
   height: 25px;
   background-image: url(../img/checkbox-off.svg);
   background-position: center;
   background-repeat: no-repeat;
-  left: -35px;
+  left: -37px;
   opacity: 0.4;
 }
 
@@ -1453,7 +1459,7 @@ li:last-child .page-link {
   background-position: center;
   background-repeat: no-repeat;
   top:12;
-  left: -33px;
+  left: -36px;
   opacity: 0.4;
 }
 
@@ -1555,6 +1561,12 @@ font-weight: 700;
   outline-offset: -2px;
 }
 
+.modal-text-input:hover::placeholder,
+.modal-name-input:hover::placeholder,
+.modal-email-input:hover::placeholder {
+  color: var(--basic-darker);
+}
+
 .modal-text-input:focus,
 .modal-name-input:focus,
 .modal-email-input:focus {
@@ -1627,6 +1639,11 @@ font-weight: 700;
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .input-error {
@@ -1636,4 +1653,44 @@ font-weight: 700;
 
 .input-error::placeholder {
   color: var(--basic-red-hover);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
