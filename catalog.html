@@ -46,19 +46,18 @@
             <li><a href="#">По названию</a></li>
           </ul>
           <ul class="sort-list sort-updown">
-            <li class="sort sort-up sort-active"><a class="current" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" fill="#231F20"/>
+            <li class="sort sort-up sort-active"><a class="current" href="#"><svg width="11" height="10"
+                  viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#231F20" />
                 </svg>
               </a></li>
             <li class="sort sort-down"><a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" fill="#231F20"/>
+                  <path d="M5.5 10L0 0H11" fill="#231F20" />
                 </svg>
               </a></li>
           </ul>
         </div>
-        <!-- Тут будет фильтр стоимость/сетка/особенности -->
         <section>
           <h2 class="visually-hidden">Фильтр выбора макеты</h2>
           <form method="GET" action="https://echo.htmlacademy.ru">
@@ -72,10 +71,10 @@
                   <div tabindex="0" class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">
+                  <label>
                     от <input type="number" name="min-price" value="0">
                   </label>
-                  <label class="max-price">
+                  <label>
                     до <input type="number" name="max-price" value="15000">
                   </label>
                 </div>
@@ -84,17 +83,17 @@
             <fieldset class="filter-item radio-filter">
               <legend>Сетка:</legend>
               <ul class="filter-list">
-                <li class="filter-option filter-radio">
+                <li class="filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid"
                     value="adaptive" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
-                <li class="filter-option filter-radio">
+                <li class="filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="fix"
                     id="filter-fix">
                   <label for="filter-fix">Фиксированная</label>
                 </li>
-                <li class="filter-option filter-radio">
+                <li class="filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid" value="rubber"
                     id="filter-rubber">
                   <label for="filter-rubber">Резиновая</label>
@@ -141,61 +140,48 @@
             <!-- Обернул всплывающее окно в div, чтобы им легче было манипулировать (не до конца понимаю верно это или нет) -->
             <li class="demos-item">
               <img src="img/sedona-catalog-project.jpg" width="358" height="578" alt="Демо-макет Sedona">
-              <!-- <div class="demo-img">
-        </div> -->
-              <!-- Обернул в div, чтобы отделить от основного куска (появляется при наведении) -->
               <div class="demos-item-popup">
-                <h3><a href="#">Sedona</a></h3>
-                <p>Информационный сайт для туристов</p>
+                <h3 class="demos-name"><a href="#">Sedona</a></h3>
+                <p>Информационный сайт<br> для туристов</p>
                 <a class="button" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="demos-item">
               <img src="img/pink-catalog-project.jpg" width="358" height="578" alt="Демо-макет Pink App">
-              <!-- <div class="demo-img">
-        </div> -->
               <div class="demos-item-popup">
-                <h3><a href="#">Pink app</a></h3>
+                <h3 class="demos-name"><a href="#">Pink app</a></h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="button" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="demos-item">
               <img src="img/borodinski-catalog-project.jpg" width="358" height="578" alt="Демо-макет Barbershop">
-              <!-- <div class="demo-img"> -->
-              <!-- </div> -->
-              <div class="demos-item-popup">
-                <h3><a href="#">Barbershop</a></h3>
+              <div class="demos-item-popup demos-item-popup-second">
+                <h3 class="demos-name"><a href="#">Barbershop</a></h3>
                 <p>Сайт салона красоты.<br>Для мужчин, да.</p>
                 <a class="button" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="demos-item">
               <img src="img/mishki-catalog-project.jpg" width="358" height="578" alt="Демо-макет Mishka">
-              <!-- <div class="demo-img"> -->
-              <!-- </div> -->
-              <div class="demos-item-popup">
-                <h3><a href="#">Mishka</a></h3>
+              <div class="demos-item-popup demos-item-popup-second">
+                <h3 class="demos-name"><a href="#">Mishka</a></h3>
                 <p>Интернет-магазин<br>вязаных игрушек</p>
                 <a class="button" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="demos-item">
               <img src="img/catalog-project.jpg" width="358" height="578" alt="Демо-макет A plus">
-              <!-- <div class="demo-img"> -->
-              <!-- </div> -->
-              <div class="demos-item-popup">
-                <h3><a href="#">A plus</a></h3>
+              <div class="demos-item-popup demos-item-popup-third">
+                <h3 class="demos-name"><a href="#">A plus</a></h3>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a class="button" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="demos-item">
               <img src="img/kvast-catalog-project.jpg" width="358" height="578" alt="Демо-макет Kvas">
-              <!-- <div class="demo-img"> -->
-              <!-- </div> -->
-              <div class="demos-item-popup">
-                <h3><a href="#">Кваст</a></h3>
+              <div class="demos-item-popup demos-item-popup-third">
+                <h3 class="demos-name"><a href="#">Кваст</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a class="button" href="#">9 900 ₽</a>
               </div>
@@ -205,7 +191,7 @@
             <li><a class="page-link page-link-current">1</a></li>
             <li><a class="page-link" href=#>2</a></li>
             <li><a class="page-link" href=#>3</a></li>
-            <li><a class="page-link" href=#>Следующая</a></li>
+            <li><a class="page-link-last" href=#>Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -213,9 +199,9 @@
   </main>
   <footer class="page-footer catalog-footer">
     <div class="map map-error">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603127366778!5m2!1sru!2sru"
-        height="416" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603127366778!5m2!1sru!2sru"
+        height="416" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
       <div class="location-information wrapper">
         <h2 class="visually-hidden">Схема проезда</h2>
@@ -224,7 +210,7 @@
         </p>
         <p class="location-information-adress">
           191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
+          ул. Б. Конюшенная, д. 19/8
         </p>
         <p class="location-information-phone-number">
           тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
@@ -234,7 +220,6 @@
         </div>
       </div>
     </div>
-
     <section class="social-media-buttons wrapper">
       <h2 class="visually-hidden">Социальные сети</h2>
       <div class="footer-grid">
@@ -242,7 +227,8 @@
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg aria-hidden="true" focusable="false" width="27" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="27" height="15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.14 11.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.71.74-5.25 1.6-2.15 2.24-3.46 2.04-4.02-.2-.54-1.37-.4-1.37-.4L20.7.7c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.15-2.72 2.96-.66-.43-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 0c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.53.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.92-1.4-2.92s-.1-.29-.32-.45c-.25-.18-.6-.24-.6-.24L.85.68S.29.7.08.95c-.18.21-.01.66-.01.66s2.9 6.89 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z"
                   fill="#fff" /></svg>
@@ -251,14 +237,16 @@
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <svg aria-hidden="true" focusable="false" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="12" height="22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Инстаграм</span>
-              <svg aria-hidden="true" focusable="false" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z"
                   fill="#fff" /></svg>
@@ -290,8 +278,11 @@
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button" aria-label="Закрыть"><svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z" fill="#FB565A"/>
+    <button class="modal-close" type="button" aria-label="Закрыть"><svg aria-hidden="true" focusable="false" width="21"
+        height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z"
+          fill="#FB565A" />
       </svg></button>
   </section>
   <script src="js/modal.min.js"></script>

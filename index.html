@@ -7,6 +7,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
+
 <body class="page-body">
   <header class="main-header">
     <div class="wrapper">
@@ -30,55 +31,49 @@
   </header>
   <main>
     <h1 class="visually-hidden">Интернет магазин Nerds</h1>
-    
-    <!-- Обернул слайды в список, показалось, что так будет более корректно расставлять классы -->
     <div class="background-color">
-    <div class=" wrapper">
-    <section class="slider">
-      <h2 class="visually-hidden">Слайдер</h2> 
-    <ul class="slider-list">
-      <li class="slider-item slider-item-1  slider-current">
-        <div class="item_desc">
-          <p class="slider-item-title">Долго, дорого, скрупулезно.</p>
-          <p class="slider-item-text slider-item-text-1">Математически выверенный дизайн<br>для вашего сайта или
-            мобильного приложения.</p>
-          <!-- Пишу button из-за логики восприятия макета, помню, что это ссылка в html -->
-          <a class="button slider-button slider-button-1" href="#">Узнать больше</a>
-        </div>
-      </li>
-      <li class="slider-item slider-item-2">
-        <div class="item_desc">
-          <p class="slider-item-title">Любим математику как никто другой</p>
-          <p class="slider-item-text slider-item-text-2">Никакого креатива, только математические формулы для расчета
-            идеальных пропорций
-          </p>
-          <a class="button slider-button slider-button-2" href="#">Узнать больше</a>
-        </div>
-      </li>
-      <li class="slider-item slider-item-3">
-        <div class="item_desc">
-          <p class="slider-item-title">Только ночь, только хардкор</p>
-          <p class="slider-item-text slider-item-text-3">Работать днем, как все? Мы против этого.<br>Ближе к полуночи
-            работа только
-            начинается.
-          </p>
-          <a class="button slider-button slider-button-3" href="#">Узнать больше</a>
-        </div>
-      </li>
-    </ul>
-    <div class="slider-controls">
-      <button class="current" type="button" aria-label="Первый слайд"></button>
-      <button  type="button" aria-label="Второй слайд"></button>
-      <button type="button" aria-label="Третий слайд"></button>
+      <div class=" wrapper">
+        <section class="slider">
+          <h2 class="visually-hidden">Слайдер</h2>
+          <ul class="slider-list">
+            <li class="slider-item slider-item-1  slider-current">
+              <div class="item_desc">
+                <p class="slider-item-title">Долго, дорого, скрупулезно.</p>
+                <p class="slider-item-text slider-item-text-1">Математически выверенный дизайн<br>для вашего сайта или
+                  мобильного приложения.</p>
+                <a class="button slider-button slider-button-1" href="#">Узнать больше</a>
+              </div>
+            </li>
+            <li class="slider-item slider-item-2">
+              <div class="item_desc">
+                <p class="slider-item-title">Любим математику как никто другой</p>
+                <p class="slider-item-text slider-item-text-2">Никакого креатива, только математические формулы для
+                  расчета
+                  идеальных пропорций
+                </p>
+                <a class="button slider-button slider-button-2" href="#">Узнать больше</a>
+              </div>
+            </li>
+            <li class="slider-item slider-item-3">
+              <div class="item_desc">
+                <p class="slider-item-title">Только ночь, только хардкор</p>
+                <p class="slider-item-text slider-item-text-3">Работать днем, как все? Мы против этого.<br>Ближе к
+                  полуночи
+                  работа только
+                  начинается.
+                </p>
+                <a class="button slider-button slider-button-3" href="#">Узнать больше</a>
+              </div>
+            </li>
+          </ul>
+          <div class="slider-controls">
+            <button class="current" type="button" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button type="button" aria-label="Третий слайд"></button>
+          </div>
+        </section>
+      </div>
     </div>
-  </section>
-  </div>
-</div>
-    <!-- Разметка переключателя между слайдами -->
-
-    <!-- Конец разметки слайдера -->
-    <!-- Не добавлял классы h3 и p из-за того, что они одиночные, можно будет обратиться вот так .services-item h3/ .services-item p -->
-    <!-- Первый класс у кнопок отвечает за оформление, а второй за цвет -->
     <section class="services wrapper">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
@@ -108,8 +103,6 @@
         </li>
       </ul>
     </section>
-
-    <!-- Секция "О компании" -->
     <section class="about-company wrapper">
       <h2 class="visually-hidden">О компании</h2>
       <div class="about-company-container">
@@ -137,7 +130,6 @@
             </li>
           </ul>
         </div>
-        <!-- Правая часть секции -->
         <div class="about-company-right-section">
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип с фоном">
           <p class="about-company-right-section-definitions-description">
@@ -160,8 +152,6 @@
         </div>
       </div>
     </section>
-    <!-- Конец секции "О компании" -->
-    <!-- Начало секции с партнерами -->
     <section class="partners wrapper">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="partners-list">
@@ -183,49 +173,59 @@
         </li>
       </ul>
     </section>
-    <!-- Конец секции с партнерами -->
   </main>
   <footer class="page-footer main-footer ">
     <div class="map map-error">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603127366778!5m2!1sru!2sru" height="416" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603127366778!5m2!1sru!2sru"
+        height="416" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="location-information wrapper">
-      <h2 class="visually-hidden">Схема проезда</h2>
-      <p class="location-information-company-name">
-        NЁRDS DESIGN STUDIO
-      </p>
-      <p class="location-information-adress">
-        191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8<br>
-      </p>
-      <p class="location-information-phone-number">
-        тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-      </p>
-      <div class="location-information-button">
-        <a class="button" href="form.html">Напишите нам</a>
+        <h2 class="visually-hidden">Схема проезда</h2>
+        <p class="location-information-company-name">
+          NЁRDS DESIGN STUDIO
+        </p>
+        <p class="location-information-adress">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="location-information-phone-number">
+          тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <div class="location-information-button">
+          <a class="button" href="form.html">Напишите нам</a>
+        </div>
       </div>
     </div>
-  </div>
-
-  <section class="social-media-buttons wrapper">
+    <section class="social-media-buttons wrapper">
       <h2 class="visually-hidden">Социальные сети</h2>
       <div class="footer-grid">
         <ul class="social-media-list">
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg aria-hidden="true" focusable="false" width="27" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.14 11.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.71.74-5.25 1.6-2.15 2.24-3.46 2.04-4.02-.2-.54-1.37-.4-1.37-.4L20.7.7c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.15-2.72 2.96-.66-.43-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 0c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.53.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.92-1.4-2.92s-.1-.29-.32-.45c-.25-.18-.6-.24-.6-.24L.85.68S.29.7.08.95c-.18.21-.01.66-.01.66s2.9 6.89 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z" fill="#fff"/></svg>
+              <svg aria-hidden="true" focusable="false" width="27" height="15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.14 11.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.71.74-5.25 1.6-2.15 2.24-3.46 2.04-4.02-.2-.54-1.37-.4-1.37-.4L20.7.7c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.15-2.72 2.96-.66-.43-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 0c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.53.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.92-1.4-2.92s-.1-.29-.32-.45c-.25-.18-.6-.24-.6-.24L.85.68S.29.7.08.95c-.18.21-.01.66-.01.66s2.9 6.89 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z"
+                  fill="#fff" /></svg>
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <svg aria-hidden="true" focusable="false" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
+              <svg aria-hidden="true" focusable="false" width="12" height="22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Инстаграм</span>
-              <svg aria-hidden="true" focusable="false" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z" fill="#fff"/></svg>
+              <svg aria-hidden="true" focusable="false" width="21" height="21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z"
+                  fill="#fff" /></svg>
             </a>
           </li>
         </ul>
@@ -254,8 +254,11 @@
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button" aria-label="Закрыть"><svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z" fill="#FB565A"/>
+    <button class="modal-close" type="button" aria-label="Закрыть"><svg aria-hidden="true" focusable="false" width="21"
+        height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.3299 10.5005L20.7072 3.12321C21.0963 2.7317 21.0963 2.09952 20.7072 1.70801L19.292 0.291799C18.9005 -0.0972665 18.2683 -0.0972665 17.8768 0.291799L10.4995 7.67009L3.12221 0.2928C2.7307 -0.0962657 2.09852 -0.0962657 1.70701 0.2928L0.291799 1.70801C-0.0972665 2.09952 -0.0972665 2.7317 0.291799 3.12321L7.66909 10.5005L0.291799 17.8778C-0.0972665 18.2693 -0.0972665 18.9015 0.291799 19.293L1.70801 20.7082C2.09952 21.0973 2.7317 21.0973 3.12321 20.7082L10.5005 13.3309L17.8778 20.7082C18.2693 21.0973 18.9015 21.0973 19.293 20.7082L20.7082 19.293C21.0973 18.9015 21.0973 18.2693 20.7082 17.8778L13.3299 10.5005Z"
+          fill="#FB565A" />
       </svg></button>
   </section>
   <script src="js/modal.min.js"></script>
