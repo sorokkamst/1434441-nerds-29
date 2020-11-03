@@ -944,6 +944,12 @@ a {
   font-weight: 400;
   line-height: 18px;
   color: var(--basic-dark);
+  margin:0;
+}
+
+.location-information-address {
+  margin-left: 50px;
+  margin-top:23px;
 }
 
 /* Section "Social Media" */
@@ -1282,20 +1288,12 @@ a {
   padding-left: 49px;
 }
 
-.location-information-adress {
-  margin: 0;
-  padding-left: 50px;
-  padding-top: 22px;
-}
-
-
 .location-information-button .button {
   background-color: var(--basic-red);
 }
 
 .location-information-phone-number {
   margin: 0;
-  margin-top: 2px;
   padding-top: 17px;
   padding-left: 50px;
 }
@@ -1578,7 +1576,6 @@ a {
   background-image: url("../img/checkbox-on.svg");
   background-position: center;
   background-repeat: no-repeat;
-  top: 12;
   left: -36px;
   opacity: 0.4;
 }
