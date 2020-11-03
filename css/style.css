@@ -896,7 +896,7 @@ a {
   left: 280px;
   width: 2px;
   height: 52px;
-  background-image: url("../img/rectangle_partners.svg");
+  background-image: url("../img/rectangle-partners.svg");
 }
 
 .partners-list .partners-item:nth-child(2) {
@@ -911,7 +911,7 @@ a {
   left: 300px;
   width: 2px;
   height: 52px;
-  background-image: url("../img/rectangle_partners.svg");
+  background-image: url("../img/rectangle-partners.svg");
 }
 
 .partners-list .partners-item:nth-child(3) {
@@ -927,7 +927,7 @@ a {
   left: 300px;
   width: 2px;
   height: 52px;
-  background-image: url("../img/rectangle_partners.svg");
+  background-image: url("../img/rectangle-partners.svg");
 }
 
 .partners-list .partners-item:nth-child(4) {
