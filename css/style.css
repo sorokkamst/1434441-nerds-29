@@ -521,7 +521,7 @@ a {
 }
 
 .slider-item-text-1,
-.slidet-item-text-3 {
+.slider-item-text-3 {
   padding-top: 25px;
 }
 
@@ -937,7 +937,7 @@ a {
 
 /* Section "Location Information" */
 
-.location-information-adress,
+.location-information-address,
 .location-information-phone-number,
 .location-information-phone-number a {
   font-size: 16px;
